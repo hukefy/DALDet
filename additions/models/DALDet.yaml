@@ -1,0 +1,30 @@
+
+# Parameters
+nc: 3  # number of classes
+ch: 3 # input channel
+depth_multiple: 0.67  # model depth multiple
+width_multiple: 0.75  # layer channel multiple
+anchors:
+  - [10,13, 16,30, 33,23]  # P3/8
+  - [30,61, 62,45, 59,119]  # P4/16
+  - [116,90, 156,198, 373,326]  # P5/32
+
+backbone:
+  # [from, number, module, args]
+  [[-1, 1, Conv, [32, 4, 2, 1]],  # 0-P1/2
+   [-1, 1, DConv, [64, 3, 1, 1]],  #1
+   [-1, 1, Conv, [128, 3, 2]],  # 2-P2/4
+   [-1, 1, FEB, [256]], # 3-P3/8
+   [-1, 1, FEB, [512]], # 4-P4/16
+   [-1, 1, FEB, [1024]], # 5-P5/32
+   [[-1, 4], 1, FU1, [1024]], # 6
+   [[-1, 3], 1, FU2, [512]],  # 7
+  ]
+
+head:
+  [[6, 1, LRB1, [1024]], # 8
+   [7, 1, LRB2, [512]], # 9
+   [7, 1, LRB3, [256]], # 10
+   [[10, 9, 8], 1, PAFPN, []],  # 11
+   [-1, 1, Detect, [nc, anchors]],  # Detect head
+  ]
