@@ -13,7 +13,7 @@ DALDet, which effectively improves the localization ability of the detector. Due
 <div align="center">
   <img src="assets/Framework.png" width="90%"/>
 
-  Fig. 1: Overall architecture of the proposed MMI-Det model.
+  Fig. 1: Overall architecture of the proposed DALDet.
 </div>
 
 ## Prerequisites
