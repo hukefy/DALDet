@@ -2,6 +2,14 @@
 [AAAI2024] DALDet: Depth-aware Learning Based Object Detection for Autonomous Driving
 
 ## Introduction
+
+<br/>
+<div align="center">
+  <img src="assets/Paradigms.png" width="50%"/>
+
+  Fig. 1: Comparison of different paradigms.
+</div>
+
 3D object detection achieves good detection performance in autonomous driving. However, it requires substantial computational resources, which prevents its practical application. 2D object 
 detection has less computational burden but lacks spatial and geometric information embedded in depth. Therefore, we present DALDet, an efficient depth-aware learning based 2D detector, achieving 
 high-performance object detection for autonomous driving. We design an efficient one-stage detection framework and seamlessly integrate depth cues into convolutional neural network by introducing 
@@ -13,7 +21,7 @@ DALDet, which effectively improves the localization ability of the detector. Due
 <div align="center">
   <img src="assets/Framework.png" width="90%"/>
 
-  Fig. 1: Overall architecture of the proposed DALDet.
+  Fig. 2: Overall architecture of the proposed DALDet.
 </div>
 
 ## Prerequisites
