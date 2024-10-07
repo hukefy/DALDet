@@ -9,10 +9,11 @@ depth-aware convolution and depth-aware average pooling, which effectively impro
 DALDet, which effectively improves the localization ability of the detector. Due to the use of depth map, DALDet can also output the distance of the object, which is of great importance for driving
  applications such as obstacle avoidance. Extensive experiments demonstrate the superiority and efficiency of DALDet.
 
+<br/>
 <div align="center">
-    <img src="assets/Framework.png" width="90%">
+  <img src="assets/Framework.png" width="90%"/>
 
-    Fig. 1: Overall framework of the proposed DALDet.
+  Fig. 1: Overall architecture of the proposed MMI-Det model.
 </div>
 
 ## Prerequisites
