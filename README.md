@@ -10,7 +10,7 @@ DALDet, which effectively improves the localization ability of the detector. Due
  applications such as obstacle avoidance. Extensive experiments demonstrate the superiority and efficiency of DALDet.
 
 <div align="center">
-    <img src="images/Framework.png" width="90%">
+    <img src="assets/Framework.png" width="90%">
 
     Fig. 1: Overall framework of the proposed DALDet.
 </div>
