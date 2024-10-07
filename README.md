@@ -7,7 +7,7 @@
 <div align="center">
   <img src="assets/Paradigms.png" width="50%"/>
 
-  Fig. 1: Comparison of different paradigms.
+  Fig. 1: Comparison of different detection paradigms.
 </div>
 
 3D object detection achieves good detection performance in autonomous driving. However, it requires substantial computational resources, which prevents its practical application. 2D object 
